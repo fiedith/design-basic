@@ -1,0 +1,116 @@
+.nav {
+  height: 70px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center; /* height를 중앙정렬 */
+  background-color: lightgray;
+}
+
+.nav-right-items {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo-image {
+  width: 60px;
+  height: 57px;
+  padding-left: 20px;
+}
+
+.nav-item-hl {
+  text-decoration: none;
+  color: #ff6c38;
+  padding: 20px 10px;
+}
+
+.nav-item-hl:hover {
+  color: #ff2d28;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------- */
+
+.main {
+  text-align: center; /* 글자 중앙정렬 */
+  width: 1000px; /* width제한둠으로써 컨텐츠 내부가 옹기종기 모임*/
+  margin: 0 auto; /* main 태그 전체를 중앙정렬*/
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.subtitle {
+  line-height: 30px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* --------------------------------------------------- */
+
+.prices {
+  display: flex;
+}
+
+.pricing-item {
+  width: 300px;
+  height: 330px;
+  border: 1px solid black;
+  margin: 40px 20px;
+  border-radius: 3%;
+}
+
+/* .pricing-item:first-child {
+  background-color: lightblue;
+} 안이쁨*/
+
+.pricing-item-title {
+  font-size: 1.7rem;
+  background: lightgray;
+  height: 52px; /* 해당 태그 자체의 height를 늘림. */
+  line-height: 52px; /* 내부 글자의 height를 중앙정렬. 해당 태그의 height크기만큼 지정하면 딱 중앙임 */
+  border-bottom: 1px solid black;
+}
+
+.pricing-item-price {
+  font-size: 2.5rem;
+  padding: 20px; /* 여백을 주기 위해서는 margin:20px 줘도 상관은 없지만 
+  혹시 나중에 배경색을 추가하게 될지도 모르니 padding으로 깔끔하게 하자?
+  (뇌피셜) */
+}
+
+.pricing-item-price-month {
+  color: grey;
+}
+
+.pricing-item-desc {
+  font-size: 1.17rem;
+  line-height: 24px;
+}
+
+.pricing-item-button {
+  margin-top: 30px; /* 여기서는 여백을 주기 위해 padding-top 말고 margin을 줬는데,
+  기억해야 할 부분이 box model순서. content-padding-border-margin인데 아래에서 우리는
+  border을 지정할 것이므로 border밖의 content와의 여백을 주기 위해서는 margin에 값을 줘야함*/
+  background-color: white;
+  background-image: none;
+  border-color: #007bff;
+  padding: 0.5rem 1rem; /* 버튼에 패딩을 부여 == 버튼 크기 up*/
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem; /* 버튼 모서리도 border-radius 설정가능 */
+  color: #007bff;
+  cursor: pointer; /* 버튼위에 커서 놓으면 클릭커서로 변경*/
+}
+
+.pricing-item-button-active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pricing-item-button:hover {
+  background-color: #003bff;
+  color: white;
+}
